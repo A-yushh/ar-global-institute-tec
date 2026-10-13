@@ -13,7 +13,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: web-app
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
@@ -26,6 +28,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+        cache-dependency-path: web-app/package-lock.json
+    - name: Install dependencies
+      run: npm ci
+    - name: Build React application
+      run: npm run build --if-present
+    - name: Run tests
+      run: npm test
