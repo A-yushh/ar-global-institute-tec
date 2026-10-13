@@ -11,7 +11,7 @@ export const App = () => {
     <Provider store={store}>
       <ThemeProvider>
         <AuthModalProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <AppRouter />
           </BrowserRouter>
         </AuthModalProvider>
