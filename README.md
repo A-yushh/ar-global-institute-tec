@@ -87,7 +87,7 @@ To connect the application to a live backend service:
 2. The pre-configured Axios client in `src/apiServices/axiosInstance.ts` automatically attaches JWT authentication tokens from `localStorage` to all outgoing requests and handles automatic token expiration.
 
 ---
-.github/workflows/ci.yml
+
 ## 📄 License
 
 © 2025–2026 A. R. Global Institute. All rights reserved.

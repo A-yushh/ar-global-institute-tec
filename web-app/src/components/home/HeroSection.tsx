@@ -81,7 +81,7 @@ export const HeroSection = memo(function HeroSection() {
               />
 
               {/* Floating Badge 1 */}
-              <div className="sm:absolute sm:top-3 sm:-left-5 mt-4 sm:mt-0 bg-white px-4 py-2.5 rounded-xl shadow-lg border border-border-light flex items-center gap-2.5 animate-pulse duration-1000">
+              <div className="sm:absolute sm:top-3 sm:-left-5 mt-4 sm:mt-0 bg-white px-4 py-2.5 rounded-xl shadow-lg border border-border-light flex items-center gap-2.5  animate-bounce">
                 <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white text-base">
                   <FaUserTie />
                 </div>
@@ -92,7 +92,7 @@ export const HeroSection = memo(function HeroSection() {
               </div>
 
               {/* Floating Badge 2 */}
-              <div className="sm:absolute sm:-bottom-3 sm:-right-4 mt-3 sm:mt-0 bg-white px-4 py-2.5 rounded-xl shadow-lg border border-border-light flex items-center gap-2.5">
+              <div className="sm:absolute sm:-bottom-3 sm:-right-4 mt-3 sm:mt-0 bg-white px-4 py-2.5 rounded-xl shadow-lg border border-border-light flex items-center gap-2.5 animate-bounce">
                 <div className="w-9 h-9 rounded-lg bg-success flex items-center justify-center text-white text-base">
                   <FaCheckDouble />
                 </div>
